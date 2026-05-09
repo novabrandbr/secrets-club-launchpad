@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://chat.whatsapp.com/";
+const WHATSAPP_URL = "https://chat.whatsapp.com/C2vP3Dm8ioHJGWOHJ9BKwK";
 
 const CSS = `
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
