@@ -223,7 +223,10 @@ footer{padding:80px 5vw 40px;border-top:1px solid var(--line);background:linear-
 const SCRIPT = `
 (function(){
   // Loader
-  window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader')?.classList.add('done'),700));
+  const hideLoader=()=>document.getElementById('loader')?.classList.add('done');
+  if(document.readyState==='complete'){setTimeout(hideLoader,300)}
+  else{window.addEventListener('load',()=>setTimeout(hideLoader,500))}
+  setTimeout(hideLoader,1500);
   // Cursor
   const c=document.querySelector('.cursor'),d=document.querySelector('.cursor-dot');
   if(c&&matchMedia('(pointer:fine)').matches){
