@@ -345,7 +345,7 @@ function Index() {
                 <span className="arr">→</span>
               </a>
               <div className="trust">
-                <b>+12.480</b> mulheres já dentro
+                <b>2 grupos</b> cheios
               </div>
             </div>
           </div>
